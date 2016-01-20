@@ -4,6 +4,15 @@
   "authors": [
     "jozef butko <jbutko@gmail.com> / jozefbutko.com/resume"
   ],
+  "install" : {
+    "sources" : {
+      "normalize.css" : {
+        "mapping": [
+          {"bower_components/normalize.css/normalize.css": "styles/vendor/_normalize.scss"}
+        ]
+      }
+    }
+  },
   "description": "Description goes here",
   "main": "app.js",
   "keywords": [
@@ -24,5 +33,8 @@
     "angular-route": "~1.3.13",
     "angular-sanitize": "~1.3.13",
     "OwlCarousel": "https://github.com/OwlFonk/OwlCarousel.git#~1.3.2"
+  },
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
   }
 }

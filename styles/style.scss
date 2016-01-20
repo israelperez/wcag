@@ -1,4 +1,5 @@
 // Vendor - 3rd Party Dependencies
+@import "vendor/_normalize.scss";
 
 
 // Partials - Authored Dependencies
@@ -16,7 +17,7 @@
 @import "components/tables";
 
 // Modules - Sections made up of Reusable Components
-//@import "vendor/_bootstrap-reboot.scss"; // custom: uses our variables
+@import "vendor/_bootstrap-reboot.scss"; // custom: uses our variables
 
 // Pages - Made up of Modules
 
