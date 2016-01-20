@@ -43,7 +43,7 @@
 
 // Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
 // Makes the @content apply to the given breakpoint and wider.
-@mixin media-breakpoint-up($name, $breakpoints) {
+@mixin media-breakpoint-up($name, $breakpoints: $breakpoints) {
   $min: breakpoint-min($name, $breakpoints);
   @if $min {
     @media (min-width: $min) {
@@ -56,7 +56,7 @@
 
 // Media of at most the maximum breakpoint width. No query for the largest breakpoint.
 // Makes the @content apply to the given breakpoint and narrower.
-@mixin media-breakpoint-down($name, $breakpoints) {
+@mixin media-breakpoint-down($name, $breakpoints: $breakpoints) {
   $max: breakpoint-max($name, $breakpoints);
   @if $max {
     @media (max-width: $max) {
@@ -124,12 +124,12 @@
 //$print: 'print';
 //$tablet__with-print: "(min-width: #{$breakpoint-m})";
 
-@include media-breakpoint-up(mobile, $breakpoints) {
+@include media-breakpoint-up(mobile) {
 	body{
 		background-color: green;
 	}
 }
-@include media-breakpoint-up(tablet, $breakpoints) {
+@include media-breakpoint-up(tablet) {
 	body{
 		background-color: blue;
 	}
