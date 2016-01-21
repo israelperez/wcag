@@ -23,6 +23,7 @@ var gulp            = require('gulp'),
     $               = require('gulp-load-plugins')(),
     del             = require('del'),
     runSequence     = require('run-sequence');
+	compass 		= require('gulp-compass');
 
 
 // optimize images
@@ -121,6 +122,10 @@ gulp.task('concat', function() {
 gulp.task('sass', function() {
   return gulp.src('styles/style.scss')
     .pipe($.sourcemaps.init())
+	.pipe(compass({
+		sass: 'styles',
+		font: 'styles/fonts'
+	}))
     .pipe($.sass({
       style: 'expanded'
     }))
