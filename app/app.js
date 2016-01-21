@@ -96,6 +96,14 @@
   }
 
 
+  angular
+    .module('boilerplate').controller('shellController', ['$scope', '$document', function($scope, $document){
+		$scope.toggleMenu = function(){
+			console.log($document.find('body').toggleClass('nav__on'));
+		};
+	}]);
+
+
   /**
    * Run block
    */

@@ -32,7 +32,7 @@
 
 	</head>
 
-	<body class="main-wrapper nav__on">
+	<body class="main-wrapper nav__on" data-ng-controller="shellController">
 
 		<!--[if lt IE 8]>
 		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -40,7 +40,7 @@
 
 		<!-- Navigation -->
 		<main-nav></main-nav>
-		<button class="main-nav_toggle"><i class="main-nav_toggle-icon"></i></button>
+		<button class="main-nav_toggle" data-ng-click="toggleMenu()"><i class="main-nav_toggle-icon"></i></button>
 
 		<!-- Main view for templates -->
 		<main data-ng-view="" class="main-section"></main>
