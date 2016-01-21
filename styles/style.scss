@@ -1,24 +1,23 @@
 // Vendor - 3rd Party Dependencies
 @import "vendor/_normalize.scss";
 
-
 // Partials - Authored Dependencies
+@import "partials/mixins";
 @import "partials/variables";
 @import "partials/colours";
 @import "partials/fonts";
 @import "partials/typography";
-@import "partials/mixins";
 @import "partials/mediaqueries";
 @import "partials/grid";
-
 @import "partials/utilities";
 
 // Components - Reusable Patterns
 @import "components/tables";
 
 // Modules - Sections made up of Reusable Components
-@import "vendor/_bootstrap-reboot.scss"; // custom: uses our variables
+@import "vendor/bootstrap-reboot"; // custom: uses our variables
 
 // Pages - Made up of Modules
+@import "pages/site";
 
 // Shame - Hacks and quick fixes to implemented properly asap
