@@ -71,3 +71,233 @@ main-nav{
 	.main-nav_toggle-icon{
 		@extend .hda-icon-menu;
 	}
+
+
+/* Colours Page */
+.palette-card{
+	@extend .grid-mobile_col-2;
+	text-align: center;
+	padding: 0;
+	width: 20%;
+	dl{
+		color: $gray-light;
+		dt{
+			display: none;
+		}
+	}
+}
+.palette-item{
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.palette-teal-deep{
+	@extend .palette-item;
+	background-color: $hda-teal-deep;
+}
+.palette-red{
+	@extend .palette-item;
+	background-color: $hda-red;
+}
+.palette-orange{
+	@extend .palette-item;
+	background-color: $hda-orange;
+}
+.palette-yellow{
+	@extend .palette-item;
+	background-color: $hda-yellow;
+}
+.palette-green{
+	@extend .palette-item;
+	background-color: $hda-green;
+}
+table{
+	width: 100%;
+	margin-bottom: 3.5rem;
+	thead > tr > th{
+		border-bottom: 2px solid $gray-lighter;
+		padding: 8px;
+		padding-top: 0;
+	}
+	tbody > tr{
+		&:last-child > td{
+			border: none;
+		}
+		> td{
+			border-bottom: 1px solid $gray-lighter;
+			padding: 8px;
+		}
+	}
+}
+.palette-combo_teal-deep{
+	color: #fff;
+	background-color: $hda-teal-deep;
+}
+.palette-combo_teal-grey{
+	color: #fff;
+	background-color: $teal-grey;
+}
+.palette-combo_teal-grey-light{
+	color: #fff;
+	background-color: $teal-grey-light;
+}
+.palette-combo_teal-grey-lighter{
+	color: $hda-teal-deep;
+	background-color: $teal-grey-lighter;
+}
+.palette-combo_teal-grey-lightest{
+	color: $hda-teal-deep;
+	background-color: $teal-grey-lightest;
+}
+
+.palette-combo_grey-darkest{
+	color: #fff;
+	background-color: $grey-darkest;
+}
+.palette-combo_grey-darker{
+	color: #fff;
+	background-color: $grey-darker;
+}
+.palette-combo_grey-dark{
+	color: #fff;
+	background-color: $grey-dark;
+}
+.palette-combo_grey{
+	color: #fff;
+	background-color: $grey;
+}
+.palette-combo_grey-light{
+	color: $grey-darker;
+	background-color: $grey-light;
+}
+.palette-combo_grey-lighter{
+	color: $grey-darker;
+	background-color: $grey-lighter;
+}
+.palette-combo_grey-lightest{
+	color: $grey-darker;
+	background-color: $grey-lightest;
+}
+
+.palette-combo_peter-river{
+	color: #fff;
+	background-color: $peter-river;
+}
+.palette-combo_belize-hole{
+	color: #fff;
+	background-color: $belize-hole;
+}
+.palette-combo_turquoise{
+	color: #fff;
+	background-color: $turquoise;
+}
+.palette-combo_green-sea{
+	color: #fff;
+	background-color: $green-sea;
+}
+.palette-combo_emerald{
+	color: #fff;
+	background-color: $emerald;
+}
+.palette-combo_nephritis{
+	color: #fff;
+	background-color: $nephritis;
+}
+.palette-combo_sun-flower{
+	color: #fff;
+	background-color: $sun-flower;
+}
+.palette-combo_carrot{
+	color: #fff;
+	background-color: $carrot;
+}
+.palette-combo_alizarin{
+	color: #fff;
+	background-color: $alizarin;
+}
+.palette-combo_amethyst{
+	color: #fff;
+	background-color: $amethyst;
+}
+.palette-combo_orange{
+	color: #fff;
+	background-color: $orange;
+}
+.palette-combo_pumpkin{
+	color: #fff;
+	background-color: $pumpkin;
+}
+.palette-combo_pomegranate{
+	color: #fff;
+	background-color: $pomegranate;
+}
+.palette-combo_wisteria{
+	color: #fff;
+	background-color: $wisteria;
+}
+.palette-combo_clouds{
+	color: $grey-darker;
+	background-color: $clouds;
+}
+.palette-combo_silver{
+	color: $grey-darker;
+	background-color: $silver;
+}
+.palette-combo_concrete{
+	color: #fff;
+	background-color: $concrete;
+}
+.palette-combo_asbestos{
+	color: #fff;
+	background-color: $asbestos;
+}
+.palette-combo_wet-asphalt{
+	color: #fff;
+	background-color: $wet-asphalt;
+}
+.palette-combo_midnight-blue{
+	color: #fff;
+	background-color: $midnight-blue;
+}
+
+.color-bar{
+	height: 60px;
+	display: inline-block;
+}
+.color-bar_deep-teal{
+	@extend .color-bar;
+	width: 50%;
+	background-color: $hda-teal-deep;
+}
+.color-bar_red{
+	@extend .color-bar;
+	width: 30%;
+	background-color: $hda-red;
+}
+.color-bar_orange{
+	@extend .color-bar;
+	width: 10%;
+	background-color: $hda-orange;
+}
+.color-bar_yellow{
+	@extend .color-bar;
+	background-color: $hda-yellow;
+	width: 10%;
+}
+
+.color-bar_deep-teal_fus{
+	@extend .color-bar_deep-teal;
+}
+.color-bar_red_fus{
+	@extend .color-bar_red;
+	width: 5%;
+}
+.color-bar_orange_fus{
+	@extend .color-bar_orange;
+}
+.color-bar_yellow_fus{
+	@extend .color-bar_yellow;
+	width: 35%;
+}
