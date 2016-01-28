@@ -53,6 +53,16 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+	  .when('/typography', {
+        templateUrl: 'views/typography.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+	  .when('/icons', {
+        templateUrl: 'views/icons.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });

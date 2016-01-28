@@ -13,7 +13,7 @@ main-nav{
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: $gray-dark;
+    background: $grey-darkest;
     transition: all 0.5s ease;
 }
 	.main-nav{
@@ -25,6 +25,7 @@ main-nav{
 		color: #fff;
 		h4{
 			padding: 0 20px;
+			color: #fff;
 		}
 		ul{
 			list-style-type: none;
@@ -37,7 +38,7 @@ main-nav{
 			padding: 10px 30px;
 			&:hover{
 				text-decoration: none;
-				background-color: $gray;
+				background-color: $grey;
 			}
 		}
 	}
@@ -69,18 +70,19 @@ main-nav{
 	color: #000;
 }
 	.main-nav_toggle-icon{
-		@extend .hda-icon-menu;
+		@extend .#{$icon-prefix}-menu;
 	}
 
 
-/* Colours Page */
+/* Colours Page
+*****************************************/
 .palette-card{
 	@extend .grid-mobile_col-2;
 	text-align: center;
 	padding: 0;
 	width: 20%;
 	dl{
-		color: $gray-light;
+		color: $grey-dark;
 		dt{
 			display: none;
 		}
@@ -117,7 +119,7 @@ table{
 	width: 100%;
 	margin-bottom: 3.5rem;
 	thead > tr > th{
-		border-bottom: 2px solid $gray-lighter;
+		border-bottom: 2px solid $grey-lighter;
 		padding: 8px;
 		padding-top: 0;
 	}
@@ -126,7 +128,7 @@ table{
 			border: none;
 		}
 		> td{
-			border-bottom: 1px solid $gray-lighter;
+			border-bottom: 1px solid $grey-lighter;
 			padding: 8px;
 		}
 	}
@@ -300,4 +302,162 @@ table{
 .color-bar_yellow_fus{
 	@extend .color-bar_yellow;
 	width: 35%;
+}
+
+
+/* Typography Page
+*****************************************/
+.font-gallery_open-sans-light{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.font-gallery_open-sans-normal{
+	font-family: 'Open Sans';
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.font-gallery_open-sans-bold{
+	font-family: 'Open Sans';
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.font-gallery_character{
+	@extend .grid-mobile_col-2;
+	font-size: 6rem;
+	margin-top: -1.7rem;
+}
+.font-gallery_font{
+	@extend .grid-mobile_col-7;
+	font-size: 1.2rem;
+	padding-left: 2rem;
+}
+.font-gallery_details{
+	@extend .grid-mobile_col-3;
+	font-family: 'Open Sans';
+	font-weight: $font-weight-root;
+	border-left: 1px solid $grey-light;
+	padding-left: 2rem;
+	strong{
+		font-weight: $font-weight-strong;
+	}
+}
+
+.code-editor{
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	.header{
+		padding: 8px 10px;
+		background: $grey-lightest;
+		border-bottom: 1px solid $grey-light;
+	}
+	.code-editor_lines{
+		padding: 8px 10px;
+		border-right: 1px solid $grey-light;
+		background: $grey-lightest;
+		height: 100%;
+		vertical-align: top;
+		width: 1rem;
+		text-align: center;
+	}
+	.code-editor_code{
+		font-family: Consolas, 'courier new';
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+}
+
+.style-spec{
+	@extend .grid-row;
+	margin-bottom: 30px;
+}
+	.style-spec_data{
+		@extend .grid-mobile_col-3;
+	}
+	.style-spec_preview{
+		@extend .grid-mobile_col-6;
+		border: 1px solid $grey-lighter;
+		padding: 10px;
+		min-height: 180px;
+	}
+	.style-spec_options{
+		@extend .grid-mobile_col-3;
+		legend{
+			font-size: 1rem;
+		}
+	}
+		label[class^="colour-combo"] span{
+			display: inline-block;
+			height: 20px;
+			width: 20px;
+			vertical-align: middle;
+		}
+		.colour-combo_1{
+			.colour-combo_text{
+				background: white;
+				border: 1px solid $grey-lightest;
+			}
+			.colour-combo_background{
+				background: $hda-teal-deep;
+			}
+		}
+
+
+/* Icons Page
+*****************************************/
+.icon-library_tile{
+	@extend .grid-mobile_col-4;
+	position: relative;
+	padding-left: 4.5rem;
+	margin-bottom: 30px;
+	i{
+		@extend .#{$icon-prefix}__fixed-width;
+		position: absolute;
+		top: 0;
+		left: 0.9375rem;
+		font-size: 30px;
+	}
+	strong{
+		display: block;
+	}
+}
+.icon-stack_example{
+	@extend .#{$icon-prefix}-stack;
+	.icon-stack_icon1{
+		@extend .#{$icon-prefix}-circle;
+		@extend .#{$icon-prefix}-stack-2x;
+	}
+	.icon-stack_icon2{
+		@extend .#{$icon-prefix}-tick;
+		@extend .#{$icon-prefix}-stack-1x;
+		color: white;
+	}
+}
+.fw-list-group{
+	.fw-list-group-item{
+		position: relative;
+	    display: block;
+	    padding: 10px 15px;
+	    margin-bottom: -1px;
+	    background-color: #ffffff;
+	    border: 1px solid $grey-light;
+		&:hover{
+			text-decoration: none;
+			background-color: $grey-lightest;
+		}
+		i{
+			@extend .#{$icon-prefix}__fixed-width;
+		}
+	}
+}
+.loading-spinner{
+	@extend .#{$icon-prefix}-spinner;
+	@extend .#{$icon-prefix}-is-spin;
+	font-size: 2rem;
+}
+.loading-spinner__pulse{
+	@extend .#{$icon-prefix}-spinner;
+	@extend .#{$icon-prefix}-is-pulse;
+	font-size: 2rem;
 }

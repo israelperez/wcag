@@ -13,13 +13,14 @@ $teal-grey-light:		#79919b;
 $teal-grey-lighter:		#d2dadd;
 $teal-grey-lightest:	#e8ecee;
 
-$grey-lightest:		#eaeaea;
-$grey-lighter:		#dadada;
-$grey-light:		#bfbfbf;
-$grey:				#999;
-$grey-dark:			#666;
-$grey-darker:		#333;
-$grey-darkest:		#1a1a1a;
+$grey-lightest:		#f7f7f7;
+$grey-lighter:		#eaeaea;
+$grey-light:		#dadada;
+$grey:				#bfbfbf;
+$grey-dark:			#999;
+$grey-darker:		#666;
+$grey-darkest:		#333;
+//$grey-darkest2:	#1a1a1a;
 
 $peter-river:		#3498db;
 $turquoise:			#1abc9c;
@@ -46,18 +47,17 @@ $midnight-blue:		#2c3e50;
 
 // Colors
 //
-// Grayscale and brand colors for use across Bootstrap.
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+//
+$brand-primary:             $hda-teal-deep;
+$brand-secondary:			$hda-yellow;
+$brand-accent:				$hda-green;
 
-$brand-primary:             #0275d8 !default;
-$brand-success:             #5cb85c !default;
+$brand-success:             $hda-green;
 $brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-warning:             $hda-yellow;
+$brand-danger:              $hda-red;
+
+$font-heading-color:		$brand-primary;
 
 // Links
 //
@@ -70,7 +70,7 @@ $link-hover-decoration: underline !default;
 // Body
 //
 $body-bg:    #fff !default;
-$body-color: $gray-dark !default;
+$body-color: $grey-darkest !default;
 
 // Table
 //

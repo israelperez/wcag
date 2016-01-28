@@ -18,6 +18,7 @@ i{
 	line-height: 1;
 	height: 1em;
 	width: 1em;
+	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
 
@@ -26,6 +27,111 @@ i{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.hda-icon-menu:before {
-    content: "\f0c9";
+// fixed width ------------------------
+.#{$icon-prefix}__fixed-width{
+	width: (18em / 14);
+	text-align: center;
+}
+
+// stacked ------------------------
+.#{$icon-prefix}-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.#{$icon-prefix}-stack-1x, .#{$icon-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.#{$icon-prefix}-stack-1x { line-height: inherit; }
+.#{$icon-prefix}-stack-2x { font-size: 2em; }
+
+// animations ------------------------
+.#{$icon-prefix}-is-spin {
+	animation: icon-spin 1.5s infinite linear;
+}
+
+.#{$icon-prefix}-is-pulse {
+	animation: icon-spin 1.5s infinite steps(8);
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+	  transform: rotate(0deg);
+  }
+  100% {
+	  transform: rotate(359deg);
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+	  transform: rotate(0deg);
+  }
+  100% {
+	  transform: rotate(359deg);
+  }
+}
+
+
+
+// icons ------------------------
+.#{$icon-prefix}-tick:before {
+    content: "\e600";
+}
+.#{$icon-prefix}-cross:before {
+    content: "\e601";
+}
+.#{$icon-prefix}-times-circle:before {
+    content: "\e602";
+}
+.#{$icon-prefix}-warning:before {
+    content: "\e603";
+}
+.#{$icon-prefix}-square:before {
+    content: "\e604";
+}
+.#{$icon-prefix}-square-check:before {
+    content: "\e605";
+}
+.#{$icon-prefix}-menu:before {
+    content: "\e606";
+}
+.#{$icon-prefix}-caret-down:before {
+    content: "\e607";
+}
+.#{$icon-prefix}-caret-up:before {
+    content: "\e608";
+}
+.#{$icon-prefix}-caret-left:before {
+    content: "\e609";
+}
+.#{$icon-prefix}-caret-right:before {
+    content: "\e60a";
+}
+.#{$icon-prefix}-angle-left:before {
+    content: "\e60b";
+}
+.#{$icon-prefix}-angle-right:before {
+    content: "\e60c";
+}
+.#{$icon-prefix}-angle-up:before {
+    content: "\e60d";
+}
+.#{$icon-prefix}-angle-down:before {
+    content: "\e60e";
+}
+.#{$icon-prefix}-circle:before {
+    content: "\e60f";
+}
+.#{$icon-prefix}-circle-check:before {
+    content: "\e610";
+}
+.#{$icon-prefix}-spinner:before {
+    content: "\e611";
 }
