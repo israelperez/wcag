@@ -110,6 +110,47 @@
 		</div>
 		<div class="grid-mobile_col-8">
 			<p>extend your class with <strong>#{$icon-prefix}__fixed-width</strong> to set icons at a fixed width. Great to use when different icon widths throw off alignment. Especially useful in things like nav lists & list groups.</p>
+			<table class="code-editor">
+				<tr>
+					<th class="header" colspan="2">Html</th>
+				</tr>
+				<tr>
+					<td class="code-editor_lines">1 2 3 4</td>
+					<td class="code-editor_code">
+						<pre><code>&lt;div class="fw-list-group"&gt;
+    &lt;a class="fw-list-group-item" href="#"&gt;&lt;i class="hda-icon-menu"&gt;&lt;/i&gt;&amp;nbsp; Menu&lt;/a&gt;
+    &lt;a class="fw-list-group-item" href="#"&gt;&lt;i class="hda-icon-times-circle"&gt;&lt;/i&gt;&amp;nbsp; Close&lt;/a&gt;
+    &lt;a class="fw-list-group-item" href="#"&gt;&lt;i class="hda-icon-caret-right"&gt;&lt;/i&gt;&amp;nbsp; Next&lt;/a&gt;
+    &lt;a class="fw-list-group-item" href="#"&gt;&lt;i class="hda-icon-caret-left"&gt;&lt;/i&gt;&amp;nbsp; Previous&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<th class="header" colspan="2">Sass</th>
+				</tr>
+				<tr>
+					<td class="code-editor_lines">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</td>
+					<td class="code-editor_code">
+						<pre><code>.fw-list-group{
+    .fw-list-group-item{
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #ffffff;
+        border: 1px solid $grey-light;
+        &:hover{
+            text-decoration: none;
+            background-color: $grey-lightest;
+        }
+        i{
+            @extend .#{$icon-prefix}__fixed-width;
+        }
+    }
+}</code></pre>
+					</td>
+				</tr>
+			</table>
 		</div>
 		<h3 class="grid-mobile_col-12">Stacked Icons</h3>
 		<div class="grid-mobile_col-4">
