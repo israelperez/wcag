@@ -396,7 +396,7 @@ table{
 		.colour-combo_1{
 			.colour-combo_text{
 				background: white;
-				border: 1px solid $grey-lightest;
+				border: 1px solid $grey-light;
 			}
 			.colour-combo_background{
 				background: $hda-teal-deep;
@@ -409,19 +409,42 @@ table{
 .icon-library_tile{
 	@extend .grid-mobile_col-4;
 	position: relative;
-	padding-left: 4.5rem;
-	margin-bottom: 30px;
+	padding-left: 3.5rem;
+	margin-bottom: 20px;
+	padding-right: 0;
 	i{
 		@extend .#{$icon-prefix}__fixed-width;
 		position: absolute;
 		top: 0;
-		left: 0.9375rem;
-		font-size: 30px;
+		left: 0;
+		font-size: 24px;
+		width: 3.5rem;
+	}
+	a i{
+		position: static;
+		width: 1em;
 	}
 	strong{
 		display: block;
 	}
 }
+.download-info{
+	@extend .grid-row;
+	background: $grey-lightest;
+	margin-bottom: 20px;
+}
+	.download-info_tile{
+		@extend .icon-library_tile;
+		background: $grey-lightest;
+		border-right: 2px solid white;
+		margin: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		i{
+			font-size: 1rem;
+			top: 25px;
+		}
+	}
 .icon-stack_example{
 	@extend .#{$icon-prefix}-stack;
 	.icon-stack_icon1{

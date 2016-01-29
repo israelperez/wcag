@@ -81,57 +81,120 @@ i{
 
 
 // icons ------------------------
-.#{$icon-prefix}-tick:before {
+.#{$icon-prefix}-location:before {
     content: "\e600";
 }
-.#{$icon-prefix}-cross:before {
+.#{$icon-prefix}-location2:before {
     content: "\e601";
 }
-.#{$icon-prefix}-times-circle:before {
+.#{$icon-prefix}-printer:before {
     content: "\e602";
 }
-.#{$icon-prefix}-warning:before {
+.#{$icon-prefix}-user:before {
     content: "\e603";
 }
-.#{$icon-prefix}-square:before {
+.#{$icon-prefix}-search:before {
     content: "\e604";
 }
-.#{$icon-prefix}-square-check:before {
+.#{$icon-prefix}-tick:before {
     content: "\e605";
 }
-.#{$icon-prefix}-menu:before {
+.#{$icon-prefix}-cross:before {
     content: "\e606";
 }
-.#{$icon-prefix}-caret-down:before {
+.#{$icon-prefix}-download:before {
     content: "\e607";
 }
-.#{$icon-prefix}-caret-up:before {
+.#{$icon-prefix}-circle-cross:before {
     content: "\e608";
 }
-.#{$icon-prefix}-caret-left:before {
+.#{$icon-prefix}-warning:before {
     content: "\e609";
 }
-.#{$icon-prefix}-caret-right:before {
+.#{$icon-prefix}-twitter:before {
     content: "\e60a";
 }
-.#{$icon-prefix}-angle-left:before {
+.#{$icon-prefix}-facebook:before {
     content: "\e60b";
 }
-.#{$icon-prefix}-angle-right:before {
+.#{$icon-prefix}-google-plus:before {
     content: "\e60c";
 }
-.#{$icon-prefix}-angle-up:before {
+.#{$icon-prefix}-pinterest:before {
     content: "\e60d";
 }
-.#{$icon-prefix}-angle-down:before {
+.#{$icon-prefix}-square:before {
     content: "\e60e";
 }
-.#{$icon-prefix}-circle:before {
+.#{$icon-prefix}-square-check:before {
     content: "\e60f";
 }
-.#{$icon-prefix}-circle-check:before {
+.#{$icon-prefix}-menu:before {
     content: "\e610";
 }
-.#{$icon-prefix}-spinner:before {
+.#{$icon-prefix}-caret-down:before {
     content: "\e611";
+}
+.#{$icon-prefix}-caret-up:before {
+    content: "\e612";
+}
+.#{$icon-prefix}-caret-left:before {
+    content: "\e613";
+}
+.#{$icon-prefix}-caret-right:before {
+    content: "\e614";
+}
+.#{$icon-prefix}-envelope:before {
+    content: "\e615";
+}
+.#{$icon-prefix}-angle-down:before {
+    content: "\e616";
+}
+.#{$icon-prefix}-angle-up:before {
+    content: "\e617";
+}
+.#{$icon-prefix}-angle-left:before {
+    content: "\e618";
+}
+.#{$icon-prefix}-angle-right:before {
+    content: "\e619";
+}
+.#{$icon-prefix}-desktop:before {
+    content: "\e61a";
+}
+.#{$icon-prefix}-laptop:before {
+    content: "\e61b";
+}
+.#{$icon-prefix}-tablet:before {
+    content: "\e61c";
+}
+.#{$icon-prefix}-mobile:before {
+    content: "\e61d";
+}
+.#{$icon-prefix}-circle:before {
+    content: "\e61e";
+}
+.#{$icon-prefix}-circle-check:before {
+    content: "\e61f";
+}
+.#{$icon-prefix}-thumbs-up:before {
+    content: "\e620";
+}
+.#{$icon-prefix}-thumbs-down:before {
+    content: "\e621";
+}
+.#{$icon-prefix}-arrow-down:before {
+    content: "\e622";
+}
+.#{$icon-prefix}-arrow-up:before {
+    content: "\e623";
+}
+.#{$icon-prefix}-arrow-left:before {
+    content: "\e624";
+}
+.#{$icon-prefix}-arrow-right:before {
+    content: "\e625";
+}
+.#{$icon-prefix}-spinner:before {
+    content: "\e626";
 }
